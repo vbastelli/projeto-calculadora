@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    background: #f0f0f0; /* Light background color for the entire page */
+}
+
+.calculadora {
+    margin: auto;
+    width: 450px;
+    height: 650px;
+    background: #8d8d8d; /* Subtle background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; /* Smooth rounded corners */
+}
+
+.container-caixa {
+    width: 80%;
+    height: 15%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.caixa {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;  /* Align text to the right */
+    align-items: center;
+    padding: 20px; /* Increased padding for better spacing */
+    font-size: 36px;  /* Larger font size for numbers */
+    font-weight: bold;
+    color: #333;  /* Dark color for numbers */
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1); /* Add subtle depth inside the box */
+    border-radius: 10px; /* Smooth rounded corners */
+}
+
+.container-numeros {
+    height: 80%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 15px; /* Space between items */
+    padding: 15px; /* Add padding for better spacing */
+}
+
+.numeros, .simbolos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 22px; /* Button text size */
+    font-weight: bold;
+    height: 70px; /* Button height */
+    width: 70px; /* Button width */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Add depth */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Change background color on hover */
+.numeros:hover, .simbolos:hover {
+    background-color: #d4d4d4;
+}
+
+.container-container {
+    display: flex;            /* Enables flexbox */
+    flex-direction: column;   /* Stack items vertically */
+    justify-content: center;  /* Align items along the Y-axis (main axis for column) */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container-teclado {
+    display: flex;            /* Enables flexbox */
+    justify-content: center;  /* Align items along the Y-axis (main axis for column) */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
